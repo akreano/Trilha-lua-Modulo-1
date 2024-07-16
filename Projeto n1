@@ -1,0 +1,106 @@
+--[[
+=============================================================
+‖           ‖  Nome:Creeper                                 ‖ 
+‖           ‖  Descricao:Nao muito sociavel, posso explodir ‖
+‖     咒    ‖  a qualquer momento..                         ‖                                                          
+‖           ‖  Data de nascimento:31/08/1991                ‖
+‖============                                               ‖
+‖                                                           ‖
+‖  atributos:                                               ‖
+‖                                                           ‖
+‖   Dano                                                    ‖
+‖   Vida                                                    ‖
+‖   Velocidade                                              ‖
+‖   Habilidade                                              ‖
+=============================================================
+
+
+]]
+os.execute("chcp 65001")
+os.execute("clear")
+
+--Mob
+local monsterName = "Creeper"
+local monsterDesc1 = "Nao muito sociavel, posso"
+local monsterDesc2 = "explodir a qualquer momento.."
+local birthDate = "31/08/2009"
+
+--atributos
+local damageAttribute = 10
+local lifeAttribute = 5
+local speedAttribute = 7
+local skillAttibrute = 10
+
+local function progressBar (attribute) --codigo da barra de atributos
+    local fullBox = "▰"
+    local emptyBox = "▱"
+
+    local result = ""
+    for i = 1, 10, 1 do                                         
+        if i <= attribute then                                    
+            result = result .. fullBox                              
+        else                                                        
+            result = result .. emptyBox
+        end
+    end
+    return result
+    
+end
+
+print("=============================================================")
+print("‖           ‖", "Nome: "..monsterName.."                               ‖")
+print("‖     咒    ‖   Descricao: "..monsterDesc1.."        ‖")
+print("‖           ‖   "..monsterDesc2.."               ‖")
+print("‖============", "Nascimento: "..birthDate.."                      ‖")
+print("‖                                                           ‖")                         --parece estar tudo baguncado... mas no terminal da tudo certo!!
+print("‖  Atributos:                                               ‖")
+print("‖                                                           ‖")
+print("‖   Dano:       "..progressBar(damageAttribute).."                          ‖")
+print("‖   Vida:       "..progressBar(lifeAttribute).."                          ‖")
+print("‖   Velocidade: "..progressBar(speedAttribute).."                          ‖")
+print("‖   Habilidade: "..progressBar(skillAttibrute), "                        ‖")
+print("=============================================================")
+
+print("                                                                 ")
+print("                                                                 ")
+
+--VERSO
+
+--[[
+=============================================================
+‖ Filiacao:                                                 ‖
+‖                                                           ‖
+‖ Pai:Notch                                                 ‖
+‖ Mae: Dona porca                                           ‖
+‖                                                           ‖
+‖ Historia:Os creepers são mostradas primeiro, com base em  ‖
+‖ um modelo de porco falhado que o Notch havia criado       ‖
+‖ (ele misturou o comprimento e a altura do corpo)          ‖
+‖                                                           ‖
+‖ foram as primeiras criaturas adicionadas no Survival Test.‖
+‖                                                           ‖
+=============================================================
+
+]]
+
+local affiliation1 = "Notch"
+local affiliation2 = "Dona porca"
+local lore1 = "Os creepers são mostradas primeiro, com base em"
+local lore2 = "um modelo de porco falhado que o Notch havia criado"
+local lore3 = "(ele misturou o comprimento e a altura do corpo)"
+local lore4 = "foram as primeiras criaturas adicionadas no Survival Test."
+
+print("=============================================================")
+print("‖ Filiacao:                                                 ‖")
+print("‖                                                           ‖")
+print("‖ Pai:"..affiliation1.."                                                 ‖")
+print("‖ Mae:"..affiliation2.."                                            ‖")
+print("‖                                                           ‖")
+print("‖ Historia:"..lore1.."  ‖")
+print("‖ "..lore2.."       ‖")
+print("‖ "..lore3.."          ‖")
+print("‖                                                           ‖")
+print("‖ "..lore4.."‖")
+print("‖                                                           ‖")
+print("=============================================================")
+
