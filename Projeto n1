@@ -29,7 +29,7 @@ local birthDate = "31/08/2009"
 local damageAttribute = 10
 local lifeAttribute = 5
 local speedAttribute = 7
-local skillAttibrute = 10
+local skillAttribute = 10
 
 local function progressBar (attribute) --codigo da barra de atributos
     local fullBox = "▰"
@@ -58,7 +58,7 @@ print("‖                                                           ‖")
 print("‖   Dano:       "..progressBar(damageAttribute).."                          ‖")
 print("‖   Vida:       "..progressBar(lifeAttribute).."                          ‖")
 print("‖   Velocidade: "..progressBar(speedAttribute).."                          ‖")
-print("‖   Habilidade: "..progressBar(skillAttibrute), "                        ‖")
+print("‖   Habilidade: "..progressBar(skillAttribute), "                        ‖")
 print("=============================================================")
 
 print("                                                                 ")
